@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Moq;
 using NUnit.Framework;
 using Nancy;
 using Nancy.Testing;
+using Oxum.Tests.Ui;
+using Oxum.Ui.Domain;
+using Raven.Client;
 
 namespace Oxum.Ui.Tests
 {
@@ -16,8 +20,13 @@ namespace Oxum.Ui.Tests
         [Test]
         public void Should_return_all_movies_for_root()
         {
-            var bootstrapper = new DefaultNancyBootstrapper();
+            var bootstrapper = new FakeBoostrapper();
             var browser = new Browser(bootstrapper);
+
+            var documentSessionFake = new Mock<IDocumentSession>();
+            documentSessionFake.Setup(c => c.Query<Movie>()).Returns((new List<Movie> {new Movie()}).AsQueryable());
+            
+            bootstrapper.DocumentSession = 
 
             var result = browser.Get("/", with =>
                                               {

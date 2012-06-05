@@ -11,6 +11,7 @@ namespace Oxum.Ui
     {
         protected override void ConfigureApplicationContainer(Ninject.IKernel existingContainer)
         {
+            //TODO: Configure kernel
             base.ConfigureApplicationContainer(existingContainer);
         }
     }
