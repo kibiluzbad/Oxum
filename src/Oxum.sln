@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oxum.Tests", "Oxum.Tests\Oxum.Tests.csproj", "{248A8643-29A2-4129-97D9-6E53190F2377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oxum.Ui", "Oxum.Ui\Oxum.Ui.csproj", "{44611414-AFC1-4587-871E-B580A11DB4CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{248A8643-29A2-4129-97D9-6E53190F2377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{248A8643-29A2-4129-97D9-6E53190F2377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{248A8643-29A2-4129-97D9-6E53190F2377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{248A8643-29A2-4129-97D9-6E53190F2377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44611414-AFC1-4587-871E-B580A11DB4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44611414-AFC1-4587-871E-B580A11DB4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44611414-AFC1-4587-871E-B580A11DB4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44611414-AFC1-4587-871E-B580A11DB4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
