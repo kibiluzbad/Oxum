@@ -23,16 +23,13 @@ namespace Oxum.Ui.Tests
             var bootstrapper = new FakeBoostrapper();
             var browser = new Browser(bootstrapper);
 
-            var documentSessionFake = new Mock<IDocumentSession>();
-            documentSessionFake.Setup(c => c.Query<Movie>()).Returns((new List<Movie> {new Movie()}).AsQueryable());
-            
-            bootstrapper.DocumentSession = 
+            //TODO: Mock DocumentSession or find another way :)
 
             var result = browser.Get("/", with =>
-                                              {
-                                                  with.HttpRequest();
-                                                  with.Header("content-type", "application/json");
-                                              });
+                {
+                    with.HttpRequest();
+                    with.Header("content-type", "application/json");
+                });
 
             Assert.That(result.Body, Is.EqualTo(_movieJson));
         }
